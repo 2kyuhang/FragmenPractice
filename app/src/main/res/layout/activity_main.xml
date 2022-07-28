@@ -4,15 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!--//class="com.nepplus.fragmenpractice.fragments.FirstFragment" 어떤 코틀린 파일을 연결할건지?
-    //android:tag="메모장" 메모장 같은 느낌 // id와 같은 느낌-->
-    <fragment
-        android:id="@+id/firstFrag"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        class="com.nepplus.fragmenpractice.fragments.FirstFragment"
-        />
+        android:layout_height="match_parent"
+        android:scrollbarSize="0dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--//class="com.nepplus.fragmenpractice.fragments.FirstFragment" 어떤 코틀린 파일을 연결할건지?
+            //android:tag="메모장" 메모장 같은 느낌 // id와 같은 느낌-->
+            <fragment
+                android:id="@+id/firstFrag"
+                class="com.nepplus.fragmenpractice.fragments.FirstFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <fragment
+                android:id="@+id/secondFrag"
+                class="com.nepplus.fragmenpractice.fragments.SecondFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <fragment
+                android:id="@+id/thirdFrag"
+                class="com.nepplus.fragmenpractice.fragments.ThirdFragment"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

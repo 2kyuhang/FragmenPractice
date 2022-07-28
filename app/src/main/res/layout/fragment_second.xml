@@ -3,8 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#891D1D"
-    android:gravity="bottom"
+    android:background="#436A89"
     >
 
     <TextView
@@ -14,13 +13,6 @@
         android:layout_gravity="center"
 
         />
-
-    <Button
-        android:id="@+id/toastBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="토스트 찍어보기"/>
 
 
 </LinearLayout>

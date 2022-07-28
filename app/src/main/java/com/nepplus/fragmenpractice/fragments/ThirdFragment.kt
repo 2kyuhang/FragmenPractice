@@ -8,9 +8,10 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.nepplus.fragmenpractice.R
 import kotlinx.android.synthetic.main.fragment_first.*
+import kotlinx.android.synthetic.main.fragment_third.*
 
 //프레그먼트!
-class FirstFragment : Fragment(){
+class ThirdFragment : Fragment(){
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -19,7 +20,7 @@ class FirstFragment : Fragment(){
     ): View? {
 
 
-        return inflater.inflate(R.layout.fragment_first, container, false
+        return inflater.inflate(R.layout.fragment_third, container, false
         )
     }
 
@@ -27,12 +28,11 @@ class FirstFragment : Fragment(){
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        //버튼 클릭시 토스트 출력
-
-        toastBtn.setOnClickListener {
-                            //프레그 먼트는 this가 아닌 requireContext() 를 해야한다!!
+        toastBtn3.setOnClickListener {
+            //프레그 먼트는 this가 아닌 requireContext() 를 해야한다!!
             Toast.makeText(requireContext(), "firstFrage입니다", Toast.LENGTH_SHORT)
 
         }
+
     }
 }

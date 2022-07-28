@@ -24,6 +24,9 @@ class FirstFragment : Fragment(){
     }
 
     //프레그먼트의 동작 코드 작성
+    //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    //무조건 여기서만 이벤트가 가능
+    //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
